@@ -1,0 +1,99 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mno.mohamed_youssef.assistant_test.Assistant_Main_ActivityFragment"
+    tools:showIn="@layout/activity_assistant__main_">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b"
+        android:alpha="0.2"/>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <mno.mohamed_youssef.assistant_test.NonScrollListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewPast"
+                style="@style/ListView"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="Past:"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/image_bg_past"
+                android:layout_marginTop="1dp"
+                android:gravity="center"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <mno.mohamed_youssef.assistant_test.NonScrollListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewNow"
+                android:layout_marginTop="32dp"
+                style="@style/ListView"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="Now:"
+                android:id="@+id/textViewNow"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/image_bg_now"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <mno.mohamed_youssef.assistant_test.NonScrollListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/listViewNext"
+                android:layout_marginTop="30dp"
+                style="@style/ListView"/>
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="Next:"
+                android:id="@+id/textViewNext"
+                android:layout_alignParentTop="false"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/image_bg_next"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

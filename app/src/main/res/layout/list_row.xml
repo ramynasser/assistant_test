@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <!--  ListRow Left sied Thumbnail image -->
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/radiobutton_now"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginLeft="10dip"/>
+
+    <!-- Title Of subj-->
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/list_image"
+        android:layout_toRightOf="@+id/list_image"
+        android:layout_centerVertical="true"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="30dip"
+        android:textStyle="bold"/>
+
+    <!-- year -->
+    <TextView
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject"
+        android:textColor="#343434"
+        android:textSize="10dip"
+         android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/subject"/>
+
+
+    <!-- Group -->
+    <TextView
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/year"/>
+    
+    <!-- Group -->
+    <TextView
+        android:id="@+id/place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subject"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/group"/>
+
+    <!-- begin -->
+
+    <TextView
+        android:id="@+id/begin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@id/subject"
+        android:gravity="right"
+        android:layout_marginRight="5dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+
+    <!-- end -->
+
+    <TextView
+        android:id="@+id/end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignBottom="@id/subject"
+        android:gravity="left"
+        android:layout_marginRight="5dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+
+
+    <!--  ListRow Left sied Thumbnail image -->
+
+    <ImageView
+        android:id="@+id/list_image_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+
+
+
+</RelativeLayout>
